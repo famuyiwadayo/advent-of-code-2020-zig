@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "day 01",
-            "type": "cppvsdbg",
+            "type": "cppdbg",  // cppvsdbg -- for windows
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day01.exe",
             "args": [],
@@ -14,11 +14,15 @@
             "cwd": "${workspaceFolder}",
             "environment": [],
             "console": "integratedTerminal",
+            "logging": {
+                "moduleLoad": false,
+                "trace": true
+            },
             "preLaunchTask": "build day 01",
         },
         {
             "name": "day 02",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day02.exe",
             "args": [],
@@ -30,7 +34,7 @@
         },
         {
             "name": "day 03",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day03.exe",
             "args": [],
@@ -42,7 +46,7 @@
         },
         {
             "name": "day 04",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day04.exe",
             "args": [],
@@ -54,7 +58,7 @@
         },
         {
             "name": "day 05",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day05.exe",
             "args": [],
@@ -66,7 +70,7 @@
         },
         {
             "name": "day 06",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day06.exe",
             "args": [],
@@ -78,7 +82,7 @@
         },
         {
             "name": "day 07",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day07.exe",
             "args": [],
@@ -90,7 +94,7 @@
         },
         {
             "name": "day 08",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day08.exe",
             "args": [],
@@ -102,7 +106,7 @@
         },
         {
             "name": "day 09",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day09.exe",
             "args": [],
@@ -114,7 +118,7 @@
         },
         {
             "name": "day 10",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day10.exe",
             "args": [],
@@ -126,7 +130,7 @@
         },
         {
             "name": "day 11",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day11.exe",
             "args": [],
@@ -138,7 +142,7 @@
         },
         {
             "name": "day 12",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day12.exe",
             "args": [],
@@ -150,7 +154,7 @@
         },
         {
             "name": "day 13",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day13.exe",
             "args": [],
@@ -162,7 +166,7 @@
         },
         {
             "name": "day 14",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day14.exe",
             "args": [],
@@ -174,7 +178,7 @@
         },
         {
             "name": "day 15",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day15.exe",
             "args": [],
@@ -186,7 +190,7 @@
         },
         {
             "name": "day 16",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day16.exe",
             "args": [],
@@ -198,7 +202,7 @@
         },
         {
             "name": "day 17",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day17.exe",
             "args": [],
@@ -210,7 +214,7 @@
         },
         {
             "name": "day 18",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day18.exe",
             "args": [],
@@ -222,7 +226,7 @@
         },
         {
             "name": "day 19",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day19.exe",
             "args": [],
@@ -234,7 +238,7 @@
         },
         {
             "name": "day 20",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day20.exe",
             "args": [],
@@ -246,7 +250,7 @@
         },
         {
             "name": "day 21",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day21.exe",
             "args": [],
@@ -258,7 +262,7 @@
         },
         {
             "name": "day 22",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day22.exe",
             "args": [],
@@ -270,7 +274,7 @@
         },
         {
             "name": "day 23",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day23.exe",
             "args": [],
@@ -282,7 +286,7 @@
         },
         {
             "name": "day 24",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day24.exe",
             "args": [],
@@ -294,7 +298,7 @@
         },
         {
             "name": "day 25",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/day25.exe",
             "args": [],
@@ -306,7 +310,7 @@
         },
         {
             "name": "all tests",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_all.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -318,7 +322,7 @@
         },
         {
             "name": "tests: util.zig",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_util.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -330,7 +334,7 @@
         },
         {
             "name": "tests: day 01",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day01.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -342,7 +346,7 @@
         },
         {
             "name": "tests: day 02",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day02.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -354,7 +358,7 @@
         },
         {
             "name": "tests: day 03",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day03.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -366,7 +370,7 @@
         },
         {
             "name": "tests: day 04",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day04.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -378,7 +382,7 @@
         },
         {
             "name": "tests: day 05",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day05.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -390,7 +394,7 @@
         },
         {
             "name": "tests: day 06",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day06.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -402,7 +406,7 @@
         },
         {
             "name": "tests: day 07",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day07.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -414,7 +418,7 @@
         },
         {
             "name": "tests: day 08",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day08.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -426,7 +430,7 @@
         },
         {
             "name": "tests: day 09",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day09.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -438,7 +442,7 @@
         },
         {
             "name": "tests: day 10",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day10.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -450,7 +454,7 @@
         },
         {
             "name": "tests: day 11",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day11.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -462,7 +466,7 @@
         },
         {
             "name": "tests: day 12",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day12.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -474,7 +478,7 @@
         },
         {
             "name": "tests: day 13",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day13.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -486,7 +490,7 @@
         },
         {
             "name": "tests: day 14",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day14.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -498,7 +502,7 @@
         },
         {
             "name": "tests: day 15",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day15.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -510,7 +514,7 @@
         },
         {
             "name": "tests: day 16",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day16.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -522,7 +526,7 @@
         },
         {
             "name": "tests: day 17",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day17.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -534,7 +538,7 @@
         },
         {
             "name": "tests: day 18",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day18.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -546,7 +550,7 @@
         },
         {
             "name": "tests: day 19",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day19.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -558,7 +562,7 @@
         },
         {
             "name": "tests: day 20",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day20.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -570,7 +574,7 @@
         },
         {
             "name": "tests: day 21",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day21.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -582,7 +586,7 @@
         },
         {
             "name": "tests: day 22",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day22.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -594,7 +598,7 @@
         },
         {
             "name": "tests: day 23",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day23.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -606,7 +610,7 @@
         },
         {
             "name": "tests: day 24",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day24.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
@@ -618,7 +622,7 @@
         },
         {
             "name": "tests: day 25",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/zig-out/bin/test_day25.exe",
             "args": ["std.testing.zig_exe_path is unavailable"],
