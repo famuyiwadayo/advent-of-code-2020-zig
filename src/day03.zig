@@ -82,7 +82,7 @@ const Snow = struct {
         var currentCol: usize = 0;
         while (row < map.len) : (row += stragy.down) {
             const nextRow = row + stragy.down;
-            // use of MOD explained by Jonathan Chow on youtube;
+            // use of MOD explained by Jonathan Chow on youtube [https://www.youtube.com/watch?v=j2fr-TQJwzA&t=23s];
             currentCol = @mod(currentCol + stragy.right, map[0].len);
 
             if (nextRow >= map.len) break;
