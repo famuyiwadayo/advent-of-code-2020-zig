@@ -66,6 +66,7 @@ const Snow = struct {
         var iterator = tokenize(u8, rawMap, "\n");
         while (iterator.next()) |line| {
             var slope = List(u2).init(self.allocator);
+            // represent each space and tree with 0 and 1 respectively;
             for (line) |char| try slope.append(Object.fromChar(@as(u8, char)).toInt());
             try self.map.append(slope.toOwnedSlice());
         }
@@ -118,6 +119,7 @@ pub fn main() !void {
     for (strategies) |stragy| {
         const res = snow.checkTrees(map, stragy);
         part_two_result = part_two_result.mult(res);
+        print("{any}\n", .{res});
     }
 
     print("PART TWO --> {any}\n", .{part_two_result});

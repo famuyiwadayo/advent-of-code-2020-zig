@@ -11,7 +11,6 @@ pub const gpa = gpa_impl.allocator();
 
 // Add utility functions here
 
-
 // Useful stdlib functions
 const tokenize = std.mem.tokenize;
 const split = std.mem.split;
@@ -39,3 +38,11 @@ const assert = std.debug.assert;
 const sort = std.sort.sort;
 const asc = std.sort.asc;
 const desc = std.sort.desc;
+const eql = std.mem.eql;
+
+pub fn includes(list: []Str, value: Str) bool {
+    for (list) |item| {
+        if (eql(u8, item, value)) return true;
+    }
+    return false;
+}
