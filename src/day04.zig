@@ -240,12 +240,6 @@ const Processor = struct {
 
 pub fn main() !void {
 
-    // var iterator = split(u8, data, "\n\n");
-
-    // while(iterator.next()) |line| {
-    //     print("{s}\n\n", .{line});
-    // }
-
     var processor = Processor.init(gpa);
     defer processor.deinit();
     const passports = try processor.parse(data);
@@ -255,19 +249,6 @@ pub fn main() !void {
     print("PART ONE --> {any}\n", .{partOneResult});
     print("PART TWO --> {any}\n", .{partTwoResult});
 
-    // const field = PassportField.fromString("hcl").isValid("#acrfff");
-
-    // print("{any}\n", .{field});
-
-    // var list = [_]String{ "a", "b", "c" };
-
-    // print("List includes a = {any}\n", .{includes(&list, "f")});
-
-    // print("\n\n\n{any}\n", .{passports});
-    // for (passports) |pass| {
-    //     var keys = pass.keyIterator();
-    //     while (keys.next()) |key| print("\n\n\nkey -->{s},   value --> {s}", .{ key.*, pass.get(key.*) });
-    // }
 }
 
 // Useful stdlib functions
