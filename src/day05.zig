@@ -87,8 +87,8 @@ const BinaryBoarding = struct {
         _ = self;
         // _ = seatIds;
 
-        var seats = try self.allocator.alloc(usize, seatIds.len);
-        std.mem.copy(usize, seats, seatIds);
+        var seats = try self.allocator.dupe(usize, seatIds);
+        defer self.allocator.free(seats);
         sort(usize, seats, {}, asc_usize);
 
         // skip the very first and last seat at index
@@ -101,6 +101,7 @@ const BinaryBoarding = struct {
             const next = i + 1;
             if(curr + 1 != seats[next]) return curr + 1;
         }
+
         return 0;
     }
 
