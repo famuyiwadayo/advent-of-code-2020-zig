@@ -46,3 +46,10 @@ pub fn includes(list: []Str, value: Str) bool {
     }
     return false;
 }
+
+pub fn mean2Floor(comptime T: type, a: T, b: T) usize {
+    return @divFloor(a + b, 2);
+}
+pub fn mean2Ceil(comptime T: type, a: T, b: T) !usize {
+    return try std.math.divCeil(T, a + b, 2);
+}
